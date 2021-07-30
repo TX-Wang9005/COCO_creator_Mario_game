@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Goomba_dead",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.0166666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "5c82ed32-792a-4e12-adaa-b999339995eb"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "a90d7c16-6f73-41fc-b3c3-5bcb538a7ff2"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "a90d7c16-6f73-41fc-b3c3-5bcb538a7ff2"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

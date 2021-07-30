@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Mario_default",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.0166666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "77efb771-bc6b-4f90-b1a8-a3b2be4c49c3"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "c667d5dc-f5d1-4888-9f75-e1c267d1a18e"
+            }
+          },
+          {
+            "frame": 2,
+            "value": {
+              "__uuid__": "77efb771-bc6b-4f90-b1a8-a3b2be4c49c3"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
