@@ -10,5 +10,4 @@ export default class NewClass extends cc.Component {
     changeScene_select() {
         cc.director.loadScene("Select_menu");
     }
-    // update (dt) {}
 }

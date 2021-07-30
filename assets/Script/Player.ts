@@ -93,10 +93,7 @@ export default class Player extends cc.Component {
         else {
             if (this.animateState != null) {
                 this.anim.play('Mario_defalut');
-
                 this.animateState = null;
-
-                cc.log('Animation finished.');
                 this.playerSpeed = 0;
             }
         }
@@ -133,14 +130,14 @@ export default class Player extends cc.Component {
     onBeginContact(contact, self, other) {
         if (other.node.name == "ground") {
             this.onGround = true;
-        } else if (other.node.name == "bound") {
+        }
+        else if (other.node.name == "bound") {
             this.onGround = true;
         }
         else if (other.node.name == "question_block") {
-            cc.log("Rockman hits the block");
             this.onGround = true;
-        } else if (other.node.name == "monster_block") {
-            cc.log("Rockman hits the block");
+        }
+        else if (other.node.name == "monster_block") {
             this.onGround = true;
         }
         else if (other.node.name == "Goomba") {
@@ -153,7 +150,8 @@ export default class Player extends cc.Component {
             else {
                 this.isDead = true;
             }
-        } else if (other.node.name == "Flower") {
+        }
+        else if (other.node.name == "Flower") {
             this.isDead = true;
         }
     }

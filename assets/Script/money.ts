@@ -25,17 +25,17 @@ export default class Bullet extends cc.Component {
         this.node.position = this.node.position.addSelf(node.position);
     }
 
-    //make the bullet move from current position
+    //make the money move from current position
     private moneyMove() {
         let moveDir = null;
 
-        // move bullet to 500 far from current position in 0.8s
+        // move bullet to 100 far from current position in 0.8s
         moveDir = cc.moveBy(0.8, 0, 100);
         let finished = cc.callFunc(() => {
             this.moneyManager.put(this.node);
         });
 
-        // after playing animation, the bullet move 0.8s and destroy itself(put back to the bullet manager)
+        // after playing animation, the bullet move 0.8s and destroy itself(put back to the money manager)
         this.scheduleOnce(() => {
             this.node.runAction(cc.sequence(moveDir, finished));
         });

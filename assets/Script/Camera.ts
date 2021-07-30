@@ -8,12 +8,6 @@ export default class Camera extends cc.Component {
 
     @property(cc.Node)
     player: cc.Node = null;
-
-    private max_x: number = 0;
-
-
-    // onLoad () {}
-
     start() {
         this.node.x = this.player.width;
     }

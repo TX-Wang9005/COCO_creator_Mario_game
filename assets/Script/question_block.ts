@@ -66,8 +66,7 @@ export default class Player extends cc.Component {
             }
         }
     }
-    // call this when player shoots the bullet.
-    private createBullet() {
+    private createBullet() {     // create money
         let money = null;
 
         if (this.moneyPool.size() > 0)

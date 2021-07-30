@@ -13,7 +13,7 @@ export default class Player extends cc.Component {
     @property(cc.Prefab)
     private MonsterPrefab: cc.Prefab = null;
 
-    private monsterPool = null; // this is a bullet manager, and it control the bullet resource
+    private monsterPool = null; // this is a monster manager, and it control the monster resource
 
     onLoad() {
         this.anim = this.getComponent(cc.Animation);
@@ -40,10 +40,7 @@ export default class Player extends cc.Component {
         else {
             if (this.animateState != null) {
                 this.anim.play('have_money');
-
                 this.animateState = null;
-
-                cc.log('Animation finished.');
             }
 
         }
@@ -59,8 +56,7 @@ export default class Player extends cc.Component {
             }
         }
     }
-    // call this when player shoots the bullet.
-    private createBullet() {
+    private createBullet() {  // create monster
         let monster = null;
 
         if (this.monsterPool.size() > 0)
